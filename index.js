@@ -28,7 +28,9 @@ function viewCart(){
       for (var i=0;i<cart.length;i++){
         itemsList.push(`${Object.keys[i]} at $${cart[i][Object.keys[i][0]]}` )
       }
-  } console.log (`${output} ${itemsList.join(",")});
+  } if (itemsList.length===1){
+    console.log(`${output} ${itemsList}.`)
+  }
 }
 //
 // function addToCart(item) {
