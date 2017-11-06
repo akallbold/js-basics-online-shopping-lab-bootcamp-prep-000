@@ -19,7 +19,7 @@ console.log(`${item} has been added to your cart.`);
 return cart;
 }
 
-viewCart();
+function viewCart();
 var output= "In your cart, you have ";
 
 if (cart.length===0){
