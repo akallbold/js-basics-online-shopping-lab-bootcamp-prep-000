@@ -26,12 +26,9 @@ function viewCart(){
     console.log("Your shopping cart is empty.");
   } else {
       for (var i=0;i<cart.length;i++){
-        itemsList.push(`${Object.keys[i]} at $${cart[i][Object.keys[i][0]]} )
+        itemsList.push(`${Object.keys[i]} at $${cart[i][Object.keys[i][0]]}` )
       }
-      if (cart.length===1){
-        output += `${itemObject.item} at $${itemObject[item]}.`
-      }
-  } console.log (output);
+  } console.log (`${output} ${itemsList.join(",")});
 }
 //
 // function addToCart(item) {
