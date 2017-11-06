@@ -19,17 +19,17 @@ console.log(`${item} has been added to your cart.`);
 return cart;
 }
 
-function viewCart();
-var output= "In your cart, you have ";
+function viewCart(){
+  var output= "In your cart, you have ";
 
-if (cart.length===0){
-  console.log("Your shopping cart is empty.");
-} else {
-    if (cart.length===1){
-      output += `${itemObject.item} at $${itemObject[item]}.`
-    }
-} console.log (output);
-
+  if (cart.length===0){
+    console.log("Your shopping cart is empty.");
+  } else {
+      if (cart.length===1){
+        output += `${itemObject.item} at $${itemObject[item]}.`
+      }
+  } console.log (output);
+}
 //
 // function addToCart(item) {
 // var price= Math.floor(Math.random()*100+1);
