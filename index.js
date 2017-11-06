@@ -28,7 +28,7 @@ if (cart.length===0){
     if (cart.length===1){
       output += `${itemObject.item} at $${itemObject[item]}.`
     }
-} return output;
+} console.log (output);
 
 //
 // function addToCart(item) {
