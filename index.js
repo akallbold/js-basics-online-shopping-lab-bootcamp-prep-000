@@ -23,7 +23,7 @@ viewCart();
 var output= "In your cart, you have ";
 
 if (cart.length===0){
-  return "Your shopping cart is empty.";
+  console.log("Your shopping cart is empty.");
 } else {
     if (cart.length===1){
       output += `${itemObject.item} at $${itemObject[item]}.`
