@@ -20,10 +20,15 @@ return cart;
 }
 
 viewCart();
+var output= "In your cart, you have ";
 
 if (cart.length===0){
-  return "Your shopping cart is empty."
-}
+  return "Your shopping cart is empty.";
+} else {
+    if (cart.length===1){
+      output += `${itemObject.item} at $${itemObject[item]}.`
+    }
+} return output;
 
 //
 // function addToCart(item) {
