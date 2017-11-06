@@ -21,10 +21,13 @@ return cart;
 
 function viewCart(){
   var output= "In your cart, you have ";
-
+  var itemsList=[];
   if (cart.length===0){
     console.log("Your shopping cart is empty.");
   } else {
+      for (var i=0;i<cart.length;i++){
+        itemsList.push(`${Object.keys[i]} at $${cart[i][Object.keys[i][0]]} )
+      }
       if (cart.length===1){
         output += `${itemObject.item} at $${itemObject[item]}.`
       }
